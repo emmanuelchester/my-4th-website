@@ -1,0 +1,58 @@
+.home header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  color: white;
+}
+.navbar a {
+  color: white;       
+  text-decoration: none; 
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.main {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+}
+.home h3 {
+    color: white;
+}
+body.portfolio {
+  margin: 0px;
+  background: #f4f4f4;
+}
+.portfolio header {
+  background: black;
+  color: white;
+  padding: 40px 20px;
+}
+.portfolio .outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  
+}
+.portfolio nav a {
+  color: white;
+  text-decoration: none;
+}
+.portfolio h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: white;
+}
+.portfolio header p {
+  text-align: center;
+  margin-top: 0px;
+  color:white;
+}
+.portfolio footer {
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 20px;
+}
