@@ -1,58 +1,54 @@
-.home header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.navbar a {
-  color: white;       
-  text-decoration: none; 
-  padding: 10px 15px;
-  font-weight: bold;
-}
-.main {
-  min-height: calc(100vh - 80px);
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  text-align: center;
-}
-.home h3 {
-    color: white;
-}
-body.portfolio {
-  margin: 0px;
-  background: #f4f4f4;
-}
-.portfolio header {
+header {
   background: black;
-  color: white;
-  padding: 40px 20px;
-}
-.portfolio .outer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  
-}
-.portfolio nav a {
-  color: white;
-  text-decoration: none;
-}
-.portfolio h1 {
-  text-align: center;
-  margin-bottom: 0px;
-  color: white;
-}
-.portfolio header p {
-  text-align: center;
-  margin-top: 0px;
   color:white;
 }
-.portfolio footer {
-  color: white;
-  background: black;
-  text-align: center;
+.outer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
+}
+nav a {
+  color:white;
+  text-decoration: none;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.hero .container {
+  max-width: 1000px;
+  margin:  0 auto;
+  padding: 0 20px;
+}
+footer {
+  color:white;
+  background:black;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fix, minmax(250px, 1fr));
+  gap: 20px;
+  border-radius: 8px;
+  border: 2px solid black;
+  
+}
+div .box {
+  padding: 40px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
