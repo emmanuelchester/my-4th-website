@@ -46,7 +46,7 @@ footer {
   display:flex;
   text-align: center;
   align-items: end;
-  height: calc(20vh - 65px);
+  min-height: calc(20vh - 65px);
   
   
 }
