@@ -43,10 +43,11 @@ footer {
 }
 
 .sword {
-  display: grid;
-  place-items: center;
+  display:flex;
   text-align: center;
+  align-items: end;
   height: calc(20vh - 65px);
+  
   
 }
 .shield {
