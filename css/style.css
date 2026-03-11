@@ -50,24 +50,29 @@ footer {
   
 }
 .shield {
-  display: flex;
-  height: calc(80vh - 65px);
+  min-height: calc(80vh - 65px); /* at least 80% of viewport minus header */
+  padding: 40px 20px;            /* spacing around the grid */
+  box-sizing: border-box;        /* ensure padding is included in size */
+  display: flex;                 /* optional if you want to center grid vertically */
+  flex-direction: column;        /* stack children vertically */
+  justify-content: center;       /* vertical centering for larger screens */
+  align-items: center;           /* horizontal centering */
 }
 .boxes {
   display: grid;
-  justify-content: center;
-  
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive columns */
   gap: 20px;
-  align-items: center;
+  width: 100%;         /* fills container width */
+  max-width: 1100px;   /* optional max width to prevent stretching on huge screens */
 }
 .box {
   display: flex;
-  border: solid;
-  padding: 20px;
-  border-radius: 8px;
-  min-height: 200px;
   align-items: center;
   justify-content: center;
+  border: solid 1px black;
+  border-radius: 8px;
+  min-height: 200px;
+  padding: 20px;
+  text-align: center;   /* ensures text stays centered */
+  background: #f2f2f2;  /* optional color for visual clarity */
 }
-
