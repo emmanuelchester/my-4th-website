@@ -83,7 +83,7 @@ footer {
 
 .playground {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin: 1rem;
 
@@ -91,13 +91,12 @@ footer {
 }
 .pbox {
   aspect-ratio: 1/1;
-
-  padding: 1rem;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
   border: solid black;
   color:white;
   text-align: center;
   border-radius: 8px;
-  font-size: clamp(1rem, 4vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 2rem);
   overflow: hidden;
   display: grid;
   place-items: center;
